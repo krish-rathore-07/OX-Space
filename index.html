@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Tic Tac Toe</title>
+  </head>
+  <body class="bg-[url(193.jpg)] bg-no-repeat m-auto">
+    <div
+      class="container border-box  flex flex-col justify-around items-center bg-center w-screen h-screen"
+    >
+      <div class="heading">
+        <h1 class="headingdiv text-white text-4xl text-center font-bold">
+          __TIC_TAC_TOE__
+        </h1>
+      </div>
+      <div
+        id="buttoncontainerid"
+        class="buttoncontainer flex flex-wrap w-70 justify-center items-center"
+      >
+        <button
+          class="button h-20 w-20 text-beige text-center text-3xl p-5 bg-white opacity-30 border-r-1 border-b-1"
+        ></button>
+        <button
+          class="button h-20 w-20 text-beige text-center text-3xl p-5 bg-white opacity-30 border-r-1 border-b-1"
+        ></button>
+        <button
+          class="button h-20 w-20 text-beige text-center text-3xl p-5 bg-white opacity-30 border-r-1 border-b-1"
+        ></button>
+        <button
+          class="button h-20 w-20 text-beige text-center text-3xl p-5 bg-white opacity-30 border-r-1 border-b-1"
+        ></button>
+        <button
+          class="button h-20 w-20 text-beige text-center text-3xl p-5 bg-white opacity-30 border-r-1 border-b-1"
+        ></button>
+        <button
+          class="button h-20 w-20 text-beige text-center text-3xl p-5 bg-white opacity-30 border-r-1 border-b-1"
+        ></button>
+        <button
+          class="button h-20 w-20 text-beige text-center text-3xl p-5 bg-white opacity-30 border-r-1 border-b-1"
+        ></button>
+        <button
+          class="button h-20 w-20 text-beige text-center text-3xl p-5 bg-white opacity-30 border-r-1 border-b-1"
+        ></button>
+        <button
+          class="button h-20 w-20 text-beige text-center text-3xl p-5 bg-white opacity-30 border-r-1 border-b-1"
+        ></button>
+      </div>
+      <div
+        id="messegeid"
+        class="messege text-white flex flex-col gap-5 justify-center items-center"
+      >
+        <div class="score flex justify-center items-center gap-20 lg:gap-80">
+          <div>Player O : <span id="playerO">0</span></div>
+          <div>Player X : <span id="playerX">0</span></div>
+        </div>
+        <div id="resultid" class="result"></div>
+        <button
+          id="resetgame"
+          onclick="resetgamefunc()"
+          class="resetgame px-5 text-black text-center text-md p-2 bg-white opacity-30 rounded-xl"
+        >
+          Reset
+        </button>
+        <button
+          id="playagain"
+          onclick="playagainfunc()"
+          class="hidden px-5 resetgame text-black text-center text-md p-2 bg-white opacity-30 rounded-xl"
+        >
+          Play Again
+        </button>
+      </div>
+    </div>
+    <audio id="myaudio" src="ting.mp3"></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
